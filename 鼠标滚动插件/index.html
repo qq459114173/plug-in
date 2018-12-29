@@ -1,0 +1,46 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>WOW</title>
+<link href="https://cdn.bootcss.com/animate.css/3.7.0/animate.min.css" rel="stylesheet">
+<link rel="stylesheet" href="static/css/site.css">
+<style>
+    .wow:first-child {
+      visibility: hidden;
+    }
+  </style>
+
+</head>
+<body>
+<div id="container">
+<header>
+</header>
+<div id="main">
+<section class="wow fadeInDown" style="background-color: #f1c40f;"></section>
+<section class="wow pulse" style="background-color: #e74c3c;" data-wow-iteration="infinite" data-wow-duration="1500ms"></section>
+<section class="section--purple wow slideInRight" data-wow-delay="2s"></section>
+<section class="section--blue wow bounceInLeft" data-wow-offset="300"></section>
+<section class="section--green wow slideInLeft" data-wow-duration="4s"></section>
+<button id="moar">LOAD MOAR!!</button>
+<!-- slideInLeft说明了动画的样式，是从左边滑动出来的 -->
+<!-- 后面的data-wow-duration（动画持续时间）、data-wow-delay（动画延迟时间）、data-wow-offset（元素的位置露出后距离底部多少像素执行）和data-wow-iteration（动画执行次数）这四个属性可选可不选。 -->
+</div>
+</div>
+<script src="https://cdn.bootcss.com/wow/1.1.2/wow.min.js"></script>
+<script>
+    wow = new WOW(
+      {
+        animateClass: 'animated',
+        offset:       0
+      }
+    );
+    wow.init();
+   /*  document.getElementById('moar').onclick = function() {
+      var section = document.createElement('section');
+      section.className = 'section--purple wow fadeInDown';
+      this.parentNode.insertBefore(section, this);
+    }; */
+  </script>
+</body>
+</html>

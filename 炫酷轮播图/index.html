@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	<title>多种过渡动画效果幻灯片轮播大图jQuery特效_效果一</title>
+	<meta name="description" content="多种过渡动画效果幻灯片轮播大图jQuery特效。" /> 
+	<meta name="keywords" content="多种,过渡动画,效果,幻灯片,轮播大图,jQuery特效" />
+	<meta name="author" content="js代码" />
+	<meta name="Copyright" content="js代码" />
+	<!-- <link href="static/css/styles_3.css" type="text/css" media="all" rel="stylesheet" /> -->
+	<style type="text/css">
+	#topmenu{
+		width:810px;
+		margin:40px auto 0 auto;height:40px;
+		position:relative;
+	}
+	#topmenu ul {
+		margin:0;
+		padding:0;
+	}
+	#topmenu ul li {
+		float:left;
+		font-size:12px;	
+		list-style:none;
+		background:#222;
+		position:relative;
+		text-align:center;
+		text-transform:uppercase;
+		width:70px;
+		margin:0 10px;display:inline;	
+		line-height:30px;
+	}
+	#topmenu ul li a {
+		color:#aaa;	
+		text-decoration:none;
+	}
+	#topmenu ul li a:hover {
+		color:#fff;	
+	}
+	#topmenu ul li.active a{
+		color:#fff;font-weight:800;
+	}
+	
+	.box_skitter{margin:40px auto;}
+	</style>
+	<!-- Skitter Styles -->
+	<link href="static/css/skitter.styles_3.css" type="text/css" media="all" rel="stylesheet" />
+	
+	<!-- Skitter JS -->
+	<script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" language="javascript" src="static/js/jquery.easing.1.3_3.js"></script>
+	<script type="text/javascript" language="javascript" src="static/js/jquery.skitter.min_3.js"></script>
+	
+	<!-- Init Skitter -->
+	<script type="text/javascript" language="javascript">
+		$(document).ready(function() {
+			$('.box_skitter_large').skitter({
+				theme: 'clean',
+				numbers_align: 'center',
+				progressbar: true, 
+				dots: true, 
+				preview: true
+			});
+		});
+	</script>
+</head>
+<body>
+
+
+
+</body>
+</html>
